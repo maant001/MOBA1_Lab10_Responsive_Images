@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>HTML <3 CSS</title>
   <style>
     img {
@@ -14,13 +15,17 @@
 <body>
 
 <!-- simple, with srcset -->
-<img src="img_504p.jpg" srcset="img_504p.jpg 2x">
+<img src="img_504p.jpg" srcset="img_1008p.jpg 2x">
+<!-- picture and srcset combined -->
+
+<!-- simple, with srcset -->
+<img src="img_504p.jpg" srcset="img_1008p.jpg 2x">
 <!-- picture and srcset combined -->
 
 <picture>
-  <source media="(min-width: 960px)" srcset="img_504p.jpg 2048w, img_504p.jpg 1024w" sizes="50vw">
+  <source media="(min-width: 960px)" srcset="img_2016p.jpgp.jpg 2048w, img_1008p.jpgp.jpg 1024w" sizes="100vw">
   <source media="(min-width: 480px)" srcset="img_504p.jpg">
-  <source srcset="img_504p.jpg 2x, img_504p.jpg 1x">
+  <source srcset="img_1008p.jpg 2x, img_504p.jpg 1x">
   <!--<img src="tablet.png" alt="A photo of London by night"> </picture>-->
   <img src="img_504p.jpg" alt="A photo of London by night">
 </picture>
